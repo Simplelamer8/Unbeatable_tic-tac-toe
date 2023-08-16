@@ -1,0 +1,69 @@
+body
+{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+td 
+{
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: sans-serif;
+    font-size: 70px;
+    cursor: pointer;
+}
+button 
+{
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: darkred;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+}
+button:hover
+{
+    color: darkred;
+    background-color: white;
+}
+table
+{
+    border-collapse: collapse;
+}
+table tr:first-child td
+{
+    border-top: 0;
+}
+table tr:last-child td
+{
+    border-bottom: 0;
+}
+table tr td:first-child
+{
+    border-left: 0;
+}
+table tr td:last-child
+{
+    border-right: 0;
+}
+.game_end
+{
+    display: none;
+    width: 200px;
+    background-color: rgba(205, 133, 63, 0.8);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-size: 2em;
+    transform: translate(-50%, -50%);
+}
